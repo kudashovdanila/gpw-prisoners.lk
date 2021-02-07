@@ -1,0 +1,33 @@
+.prisoners {
+  padding-bottom: 70px;
+}
+
+.prisoners-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    flex-basis: 30%;
+    margin-top: 40px;
+    background-color: $primary;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
+  }
+
+  &__img {
+    height: 350px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__name {
+    @include reg;
+    padding: 6px 0 8px;
+  }
+}

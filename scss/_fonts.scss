@@ -1,9 +1,11 @@
+@mixin reg {
+  font-weight: 400;
+}
 
+@mixin bold {
+  font-weight: 700;
+}
 
-// @mixin name {
-//   font-family: название шрифта, sans-serif;
-// }
-
-// @mixin name {
-//   font-family: название шрифта, sans-serif;
-// }
+@mixin black {
+  font-weight: 900;
+}

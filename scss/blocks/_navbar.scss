@@ -1,0 +1,21 @@
+.header {}
+
+.navbar {
+  padding: 22px 0;
+  background-color: $primary;
+
+  &__content {}
+
+  &__title {
+    text-align: center;
+    margin: 0;
+    font-size: 21px;
+    color: #fff;
+    @include bold;
+  }
+}
+
+.hero {
+
+  &__content {}
+}

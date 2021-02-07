@@ -1,0 +1,13 @@
+.footer {
+  background-color: $primary;
+
+  &__content {}
+
+  &__developer {
+    font-size: 14px;
+    color: #fff;
+    @include reg;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+}
