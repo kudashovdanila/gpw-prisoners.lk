@@ -1,9 +1,19 @@
-.prisoners {}
+.prisoners {
+  padding-bottom: 60px;
+
+  @media (max-width: 810px) {
+    padding-bottom: 40px;
+  }
+}
 
 .prisoners-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: 645px) {
+    justify-content: space-around;
+  }
 
   &__item {
     flex-basis: 30%;
@@ -17,14 +27,22 @@
       flex-basis: 48%;
       margin-top: 30px;
     }
+
+    @media (max-width: 810px) {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 645px) {
+      flex-basis: 45%;
+    }
   }
 
   &__img {
-    height: 350px;
+    max-height: 350px;
     overflow: hidden;
 
     @media (max-width: 1182px) {
-      height: 280px;
+      max-height: 280px;
     }
 
     img {
@@ -36,5 +54,15 @@
   &__name {
     @include reg;
     padding: 6px 0 8px;
+    font-size: 16rem;
+
+    @media (max-width: 420px) {
+      font-size: 13rem;
+      padding: 5px 0;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 12rem;
+    }
   }
 }

@@ -4,14 +4,30 @@
   padding: 22px 0;
   background-color: $primary;
 
+  @media (max-width: 775px) {
+    padding: 12px 0;
+  }
+
   &__content {}
 
   &__title {
     text-align: center;
     margin: 0;
-    font-size: 21px;
+    font-size: 21rem;
     color: #fff;
     @include bold;
+
+    @media (max-width: 670px) {
+      line-height: 1.2;
+    }
+
+    @media (max-width: 476px) {
+      font-size: 19rem;
+    }
+
+    @media (max-width: 346px) {
+      font-size: 17rem;
+    }
   }
 }
 
