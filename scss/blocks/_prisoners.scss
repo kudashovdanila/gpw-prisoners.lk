@@ -1,6 +1,4 @@
-.prisoners {
-  padding-bottom: 70px;
-}
+.prisoners {}
 
 .prisoners-list {
   display: flex;
@@ -14,11 +12,20 @@
     color: #fff;
     text-align: center;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
+
+    @media (max-width: 993px) {
+      flex-basis: 48%;
+      margin-top: 30px;
+    }
   }
 
   &__img {
     height: 350px;
     overflow: hidden;
+
+    @media (max-width: 1182px) {
+      height: 280px;
+    }
 
     img {
       display: block;
