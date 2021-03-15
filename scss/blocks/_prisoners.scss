@@ -4,6 +4,7 @@
   @media (max-width: 810px) {
     padding-bottom: 40px;
   }
+
 }
 
 .prisoners-list {
@@ -25,6 +26,7 @@
     background-color: $primary;
     text-align: center;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
+    border-radius: 10px;
 
     &:nth-child(2) {
       margin-right: 57px;
@@ -88,6 +90,7 @@
   &__img {
     max-height: 350px;
     overflow: hidden;
+    border-radius: 10px 10px 0 0;
 
     @media (max-width: 1182px) {
       max-height: 280px;
