@@ -8,8 +8,11 @@
 
 .prisoners-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: 993px) {
+    justify-content: space-between;
+  }
 
   @media (max-width: 645px) {
     justify-content: space-around;
@@ -18,10 +21,55 @@
   &__item {
     flex-basis: 30%;
     margin-top: 40px;
-    background-color: $primary;
     color: #fff;
+    background-color: $primary;
     text-align: center;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
+
+    &:nth-child(2) {
+      margin-right: 57px;
+      margin-left: 57px;
+
+      @media (max-width: 1182px) {
+        margin-right: 47px;
+        margin-left: 47px;
+      }
+
+      @media (max-width: 993px) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
+    &:nth-child(5) {
+      margin-right: 57px;
+      margin-left: 57px;
+
+      @media (max-width: 1182px) {
+        margin-right: 47px;
+        margin-left: 47px;
+      }
+
+      @media (max-width: 993px) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
+    &:nth-child(8) {
+      margin-right: 57px;
+      margin-left: 57px;
+
+      @media (max-width: 1182px) {
+        margin-right: 47px;
+        margin-left: 47px;
+      }
+
+      @media (max-width: 993px) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
 
     @media (max-width: 993px) {
       flex-basis: 48%;
